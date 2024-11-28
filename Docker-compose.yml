@@ -5,7 +5,7 @@ services:
     build: .
     container_name: ecocycle-backend
     ports:
-      - "2341:2341"  # Exposes the app on port 2341
+      - "2341:2341" 
     volumes:
       - .:/app  # Mounts the current directory to /app in the container
       - ./data.db:/app/data.db  # Persist the SQLite database file
@@ -13,4 +13,5 @@ services:
       - FLASK_ENV=development  # Set environment variable for Flask
 
 volumes:
-  postgres_data:  # This volume is not used for SQLite, so you can remove or modify it if necessary.
+  # Volumes for persisting data
+  postgres_data: 

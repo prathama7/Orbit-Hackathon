@@ -42,7 +42,7 @@ def initialize_db():
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Welcome to EcoCycle with Image and User Management!"})
+    return jsonify({"message": "Welcome to Ecomandu with Image and User Management!"})
 
 # User Management Endpoints
 @app.route('/register', methods=['POST'])
