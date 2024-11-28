@@ -13,5 +13,4 @@ services:
       - FLASK_ENV=development  # Set environment variable for Flask
 
 volumes:
-  # Volumes for persisting data
-  postgres_data: 
+  postgres_data:  # This volume is not used for SQLite, so you can remove or modify it if necessary.

@@ -11,4 +11,8 @@ COPY . .
 
 EXPOSE 2341
 
+<<<<<<< HEAD
 CMD ["python", "db.py"]
+=======
+CMD ["python", "db.py"]  # Make sure this points to the correct file if it's named differently
+>>>>>>> 4507b8b97c01a35f9718cfa4d7bd4d4ee67d0355
