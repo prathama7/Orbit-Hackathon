@@ -1,4 +1,4 @@
-const apiKey = 'your-api-key';
+const apiKey = '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';
 
 async function getRecyclingSuggestion() {
     try {
