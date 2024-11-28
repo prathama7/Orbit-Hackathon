@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 2341
 
-CMD ["python", "app.py"]
+CMD ["python", "db.py"]
