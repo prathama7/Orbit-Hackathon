@@ -12,13 +12,11 @@ def get_db():
     conn.row_factory = sqlite3.Row
     return conn
 
-# Initialize database and create tables if they do not exist
 @app.before_first_request
 def initialize_db():
     conn = get_db()
     cursor = conn.cursor()
 
-    # Create users table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,7 +25,6 @@ def initialize_db():
         )
     ''')
 
-    # Create images table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS images (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -44,7 +41,6 @@ def initialize_db():
 def home():
     return jsonify({"message": "Welcome to Ecomandu with Image and User Management!"})
 
-# User Management Endpoints
 @app.route('/register', methods=['POST'])
 def register_user():
     """Register a new user."""
@@ -82,7 +78,6 @@ def login_user():
     else:
         return jsonify({"error": "Invalid username or password!"}), 401
 
-# Image Management Endpoints
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
     """Save image information to the database."""
