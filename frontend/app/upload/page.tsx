@@ -33,7 +33,7 @@ export default function UploadPage() {
   }
 
   const handleContinue = () => {
-    router.push('/results') 
+    router.push('/disposal-locations') 
   }
 
   const handleRefresh = () => {
@@ -99,7 +99,7 @@ export default function UploadPage() {
             onClick={handleContinue}
             className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition-colors"
           >
-            Continue
+            Map
           </button>
           <button
             onClick={handleRefresh}
