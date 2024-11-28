@@ -1,0 +1,14 @@
+{
+    "name": "eco-cycle",
+    "version": "1.0.0",
+    "description": "EcoCycle Project for Orbit Hackathon using OpenAI API.",
+    "main": "eco_cycle_frontend.js",
+    "scripts": {
+      "start": "node eco_cycle_frontend.js"
+    },
+    "keywords": ["recycling", "OpenAI", "EcoCycle"],
+    "author": "Hrishav Pandey",
+    "license": "MIT",
+    "dependencies": {}
+  }
+  
